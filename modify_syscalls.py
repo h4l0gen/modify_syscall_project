@@ -5,7 +5,7 @@ prog = """
 #include <uapi/linux/ptrace.h>
 #include <linux/sched.h>
 
-#define SIGKILL 9
+#define SIGTERM 15
 
 struct key_t {
     char fname[NAME_MAX];
@@ -53,7 +53,7 @@ int syscall__openat(struct pt_regs *ctx, int dfd, const char __user *filename, i
         if (*protection_level == 1) {
             bpf_override_return(ctx, -EACCES);
         } else if (*protection_level > 1) {
-            bpf_send_signal(SIGKILL);
+            bpf_send_signal(SIGTERM);
         }
     }
     return 0;
