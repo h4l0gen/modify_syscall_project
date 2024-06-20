@@ -1,0 +1,4 @@
+/tmp/kek,1
+kek,1
+/tmp/kek_2,2
+kek_2,2
