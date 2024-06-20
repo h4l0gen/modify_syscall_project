@@ -8,8 +8,8 @@ This program will help users to prevent non-root users to read their protected f
 
 Along with this, there may be a case when user wants to give access to some non-root users to read protected files, in that case, user can also specify specific UID to allow some users with that UID to access protected files.
 UID will also contain protection level assigned it to you:
-- **<uid>,1** : It can only access files with protection level 1.
-- **<uid>,2** : It can access files with either protection level 1 or 2.
+- **uid,1** : It can only access files with protection level 1.
+- **uid,2** : It can access files with either protection level 1 or 2.
 
 ## RUN
 To run the project, `modify_syscalls.py`, `protected_files.txt` and `authorized_users.txt` needs to be in same directory. You must have [bcc](https://github.com/iovisor/bcc/blob/master/INSTALL.md) installed in your linux environment. To run program run this command 
