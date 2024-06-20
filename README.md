@@ -34,6 +34,7 @@ $ sudo python3 modify_syscalls.py
   - If the file has a security level, the program checks authorized_users to see if the UID has sufficient access level.
   - If the access level is sufficient, the operation proceeds, and an authorized access message is logged.
   - If the access level is insufficient, the program logs an unauthorized access attempt and either blocks the access or sends a SIGKILL signal based on the security level.
+  - Root user can read all protected files.
 
 - Configuration Files:
   - protected_files.txt: Specifies files to protect and their security levels.
