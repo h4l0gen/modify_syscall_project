@@ -16,7 +16,7 @@ To run the project, `modify_syscalls.py`, `protected_files.txt` and `authorized_
 ```bash
 $ sudo python3 modify_syscalls.py
 ```
-## Internal Working of the eBPF Program
+## Internal Working of Program
 
 - Program Initialization:
   - The BPF program is defined using C code within a Python script.
