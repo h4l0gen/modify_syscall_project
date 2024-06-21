@@ -16,6 +16,27 @@ To run the project, `modify_syscalls.py`, `protected_files.txt` and `authorized_
 ```bash
 $ sudo python3 modify_syscalls.py
 ```
+to check UID, run:
+```bash
+$ id -u
+```
+
+to create another user, you can run these commands:
+```bash
+$ sudo useradd testuser
+$ sudo passwd testuser
+```
+
+to change current user to testuser, run:
+```bash
+$ su - testuser
+```
+
+to delete user, run:
+```bash
+$ sudo userdel <user_name>
+```
+
 ## Internal Working of Program
 
 - Program Initialization:
