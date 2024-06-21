@@ -1,4 +1,4 @@
-# modify_openat_syscall
+# modify_syscall_project
 
 ## Description
 
