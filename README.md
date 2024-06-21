@@ -14,27 +14,27 @@ UID will also contain protection level assigned it to you:
 ## RUN
 To run the project, `modify_syscalls.py`, `protected_files.txt` and `authorized_users.txt` needs to be in same directory. You must have [bcc](https://github.com/iovisor/bcc/blob/master/INSTALL.md) installed in your linux environment. To run program run this command 
 ```bash
-$ sudo python3 modify_syscalls.py
+ sudo python3 modify_syscalls.py
 ```
 to check UID, run:
 ```bash
-$ id -u
+ id -u
 ```
 
 to create another user, you can run these commands:
 ```bash
-$ sudo useradd testuser
-$ sudo passwd testuser
+ sudo useradd testuser
+ sudo passwd testuser
 ```
 
 to change current user to testuser, run:
 ```bash
-$ su - testuser
+ su - testuser
 ```
 
 to delete user, run:
 ```bash
-$ sudo userdel <user_name>
+ sudo userdel <user_name>
 ```
 
 ## Internal Working of Program
