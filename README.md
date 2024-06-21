@@ -37,6 +37,8 @@ to delete user, run:
  sudo userdel <user_name>
 ```
 
+Please do not forget to add correct file name, which you want to protect, you may need to create it first.
+
 ## Internal Working of Program
 
 - Program Initialization:
